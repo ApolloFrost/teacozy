@@ -1,7 +1,7 @@
 /* Codecademy Intensive Pro "Build Websites From Scratch": Unit 4, Days 14-16. Submission by P.Mroz. */
 body{
   font-family: helvetica;
-  background-color: blue;
+  background-color: black;
   color: seashell;
   font-size: 22px;
   opacity: 0.9;
@@ -17,6 +17,7 @@ header{
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
+  z-index: 10;
 }
 .logo img {
   height: 50px;
@@ -36,3 +37,30 @@ nav.menu {
   text-decoration: underline;
 }
 /* BODY STYLES*/
+main{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5px;
+  margin: 0 auto 78px auto;
+  width: 1200px;
+  padding-top: 69px;
+}
+/* Mission Statement Section */
+#mission{
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/img-mission-background.jpg);
+}
+.mission_statement{
+  background-color: black;
+  width: 1200px;
+}
+.mission_statement h2{
+  margin: 10px 0px 25px 0px;
+}
+.mission_statement h4{
+  margin: 10px 0px 10px 0px;
+}
