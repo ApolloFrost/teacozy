@@ -1,0 +1,19 @@
+/* Codecademy Intensive Pro "Build Websites From Scratch": Unit 4, Days 14-16. Submission by P.Mroz. */
+body{
+  font-family: helvetica;
+  background-color: black;
+  color: seashell;
+  font-size: 22px;
+  opacity: 0.9;
+  text-align: center;
+}
+header{
+  display: flex;
+  position: fixed;
+}
+header.
+main{
+  display: flex;
+  position: relative;
+  margin-top: 69px;
+}
