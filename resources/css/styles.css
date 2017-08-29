@@ -14,6 +14,9 @@ h2 h4 {
 h3 {
   margin: 0px;
 }
+h5 {
+  margin: 10px 0px 30px 0px;
+}
 
 /*** HEADER STYLES ***/
 header{
@@ -25,7 +28,7 @@ header{
   width: 100%; /* Allows the menu to alway take up the width of the screen */
   border-bottom: 1px solid seashell;
   background-color: black;
-  padding: 8px; /* correction for Body margin fix noted above*/
+  padding-top: 8px; /* correction for Body margin fix noted above*/
   z-index: 10; /* This keeps the menu bar always on top */
 }
 .logo img {
@@ -51,7 +54,7 @@ main{
   flex-direction: column;
   align-items: center;
   z-index: 5px;
-  margin: 0 auto 78px auto;
+  margin: 0px auto 5px auto;
   width: 1200px; /* Width and Margin settings allow main section to be horizontally sized nicely */
   padding-top: 69px; /* This keeps the menu bar from overlapping the main section */
 }
@@ -100,12 +103,7 @@ div.item {
 
 /** Tea of the Month Section **/
 
-#find_us{
-  display: flex;
-  justify-content: center;
-
-}
-div.location  {
+#location  {
   height: 500px;
   width: 1200px;
   display: flex;
@@ -114,7 +112,7 @@ div.location  {
   flex-direction: column;
   background-image: url(../images/img-locations-background.jpg);
 }
-.location h2{
+#location h2{
 margin: 0px 0px 10px 0px;
 }
 div.addresses{
@@ -123,7 +121,7 @@ div.addresses{
   justify-content: space-between;
   margin-top: 5px;
 }
-div.address_box{
+div.address_box{ /* h3 margins set to 0px to properly space items in these boxes */
   width: 300px;
   height: 300px;
   display: flex;
@@ -131,5 +129,23 @@ div.address_box{
   justify-content: space-around;
   background-color: black;
   opacity: 1;
-
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.contact_info {
+  height: 200px;
+  width: 600px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_info h2 {
+  margin: 10px 0px 40px 0px;
+}
+h5.copyright {
+  margin: 60px 0px 30px 20px
 }
