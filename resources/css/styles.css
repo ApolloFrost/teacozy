@@ -6,18 +6,20 @@ body{
   font-size: 22px;
   opacity: 0.9;
   text-align: center;
+  margin-top: 0px; /* Body seems to default to 8px margin on all sides, so in order for things not to show up above the header when scrolling, I manually set the margin to 0px; */
 }
-/* HEADER STYLES*/
+/*** HEADER STYLES ***/
 header{
   display: flex;
-  position: fixed;
+  position: fixed; /* This keeps the menu bar always visible*/
   justify-content: space-between;
   align-items: center;
   height: 69px;
-  width: 100%;
+  width: 100%; /* Allows the menu to alway take up the width of the screen */
   border-bottom: 1px solid seashell;
   background-color: black;
-  z-index: 10;
+  padding: 8px; /* correction for Body margin fix noted above*/
+  z-index: 10; /* This keeps the menu bar always on top */
 }
 .logo img {
   height: 50px;
@@ -29,14 +31,13 @@ nav.menu {
   margin: 9px 10px 10px 50px;
 }
 .menu span{
-  width: 130px;
-  padding: 0px 0px;
+  width: 130px; /* Solved the problem of the "Featured Tea" Text wrapping when sized */
 }
 .menu a {
   color: seashell;
   text-decoration: underline;
 }
-/* BODY STYLES*/
+/*** BODY STYLES ***/
 main{
   display: flex;
   position: relative;
@@ -44,23 +45,56 @@ main{
   align-items: center;
   z-index: 5px;
   margin: 0 auto 78px auto;
-  width: 1200px;
-  padding-top: 69px;
+  width: 1200px; /* Width and Margin settings allow main section to be horizontally sized nicely */
+  padding-top: 69px; /* This keeps the menu bar from overlapping the main section */
 }
-/* Mission Statement Section */
+h2 h4 {
+  margin: 10px 0px;
+}
+/** Mission Statement Section **/
 #mission{
   height: 700px;
   display: flex;
   align-items: center;
-  background-image: url(../images/img-mission-background.jpg);
+  background-image: url(../images/img-mission-background.jpg); /*note that alt-images are not availabe in CSS*/
 }
 .mission_statement{
   background-color: black;
   width: 1200px;
 }
-.mission_statement h2{
+/*.mission_statement h2{
   margin: 10px 0px 25px 0px;
 }
 .mission_statement h4{
   margin: 10px 0px 10px 0px;
+}*/
+
+/** Tea of the Month Section **/
+
+#features{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 75px 100px;
+}
+div.headings {
+  width: 1000px;
+}
+div.goods {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
 }
