@@ -8,6 +8,13 @@ body{
   text-align: center;
   margin-top: 0px; /* Body seems to default to 8px margin on all sides, so in order for things not to show up above the header when scrolling, I manually set the margin to 0px; */
 }
+h2 h4 {
+  margin: 10px 0px;
+}
+h3 {
+  margin: 0px;
+}
+
 /*** HEADER STYLES ***/
 header{
   display: flex;
@@ -48,9 +55,7 @@ main{
   width: 1200px; /* Width and Margin settings allow main section to be horizontally sized nicely */
   padding-top: 69px; /* This keeps the menu bar from overlapping the main section */
 }
-h2 h4 {
-  margin: 10px 0px;
-}
+
 /** Mission Statement Section **/
 #mission{
   height: 700px;
@@ -62,12 +67,6 @@ h2 h4 {
   background-color: black;
   width: 1200px;
 }
-/*.mission_statement h2{
-  margin: 10px 0px 25px 0px;
-}
-.mission_statement h4{
-  margin: 10px 0px 10px 0px;
-}*/
 
 /** Tea of the Month Section **/
 
@@ -97,4 +96,40 @@ div.item {
 .item img {
   width: 300px;
   height: 200px;
+}
+
+/** Tea of the Month Section **/
+
+#find_us{
+  display: flex;
+  justify-content: center;
+
+}
+div.location  {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/img-locations-background.jpg);
+}
+.location h2{
+margin: 0px 0px 10px 0px;
+}
+div.addresses{
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+div.address_box{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  opacity: 1;
+
 }
